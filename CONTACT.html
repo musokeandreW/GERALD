@@ -16,11 +16,12 @@ h1 {
     text-align: center;
     margin-bottom: 30px;
 	padding: 20px;
-	background-color: orange;
+	background-color: gray;
+      color:white;
 }
 
 section {
-    background-color: red;
+    background-color: gray;
     padding: 30px;
     margin-bottom: 30px;
     border: 1px solid #ddd;
@@ -28,7 +29,8 @@ section {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h2 {   
+    text-align: center;
     margin-top: 0;
 }
 
@@ -38,16 +40,18 @@ label {
 }
 
 input[type="text"], input[type="email"] {
-    width: 100%;
-    height: 60px;
+    width: 20%;
+    height: 5px;
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #ccc;
 }
 
 textarea {
-    width: 100%;
-    height: 100px;
+    width: 20%;
+    height: 5px;
+    justify-content:center;
+    text-align:center;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -63,7 +67,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color:yellow;
+    background-color:gray;
 }
 
 iframe {
@@ -72,10 +76,9 @@ iframe {
     border: none;
 }
 nav {
-    background-color:red;
-    color: green;
+    background-color:darkblue;
     padding: 1em;
-    text-align: center;
+    text-align: right;
 	front-size: 50px;
 	margin-right:20px;
 	width:100%px;
@@ -95,21 +98,27 @@ nav li {
 }
 
 nav a {
-    color: blue;
+    color: black;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: yellow;
+    color: red;
+}
+h2{
+ color:white;
+}
+p{
+  color:lime;
 }
 </style>
 </head>
 <body style="background-image: url(view.jpg)">
      <nav>
-        <ul style="background-color:red;padding:15px;front-size:20px;">
-            <button style="background-color:green;border-radius:50px 20px 50px 20px;"><li><a href="home.html">Home</a></li></button>
-           <button style="background-color:green;border-radius:50px 20px 50px 20px;"><li><a href="about.html">About</a></li></button>
-            <button style="background-color:green;border-radius:50px 20px 50px 20px;"><li><a href="contact.html">Contact</a></li></button>ss
+        <ul style="padding:15px;front-size:20px;">
+            <button style="background-color:white;border-radius:50px 20px 50px 20px;"><li><a href="home.html">Home</a></li></button>
+           <button style="background-color:white;border-radius:50px 20px 50px 20px;"><li><a href="about.html">About</a></li></button>
+            <button style="background-color:white;border-radius:50px 20px 50px 20px;"><li><a href="contact.html">Contact</a></li></button>
         </ul>
     </nav>
 	<h1>Get in Touch</h1>
@@ -124,10 +133,10 @@ nav a:hover {
     </section>
     
     <section id="contact-form">
-        <h2>Send Us a Message</h2>
+        <h2 style="color:blue;">Send Us a Message</h2>
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name"style="text-align:center;"><br><br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email"><br><br>
             <label for="message">Message:</label>
